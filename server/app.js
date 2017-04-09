@@ -1,9 +1,11 @@
 // Import Modules
 // Define nba to access stats and data API endpoints
-const express    = require('express');
-const nba        = require('nba.js').default;
-const morgan     = require('morgan');
-const path       = require('path');
+const express       = require('express');
+const bodyParser    = require('body-parser');
+const cookieParser  = require('cookie-parser');
+const nba           = require('nba.js').default;
+const morgan        = require('morgan');
+const path          = require('path');
 
 // Define app to initialize express
 const app        = express();
