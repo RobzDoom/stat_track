@@ -12,7 +12,7 @@ const RegularGame = (props)=> {
   })
 
   // for final score
-if(game.attendance > 0 && game.clock === ""){
+  if(game.attendance > 0 && game.clock === "" && game.period.isHalftime === false){
   return(
       <div  className='col-xs-12 col-md-4'>
           <div className='panel panel-warning'>
